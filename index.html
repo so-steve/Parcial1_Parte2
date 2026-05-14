@@ -1,43 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>Rafael Lozano-Hemmer — Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/site-chrome.js" defer></script>
   </head>
-  <body data-site-page="home">
-    <div id="site-chrome-top"></div>
+  <body>
+    <div class="site-top">
+      <header class="site-header">
+        <h1 class="site-header__title">Rafael Lozano-Hemmer</h1>
+        <p>Interactividad, espacio público y arte tecnológico</p>
+      </header>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="obras.html">Obras</a></li>
+          <li><a href="tecnologia.html">Tecnología e Interactividad</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <div class="container">
-      <section class="hero" aria-label="Retrato del artista con una instalación de proyección digital.">
-        <figure class="hero__figure">
+      <section class="hero" aria-label="Retrato de Rafael Lozano-Hemmer.">
+        <div class="hero__figure">
           <img
-            src="assets/images/lozano-hemmer-hero.png"
-            alt="Rafael Lozano-Hemmer frente a una instalación con proyección de letras y símbolos luminosos sobre fondo oscuro."
+            src="assets/images/lozano-hemmer-1.jpg"
+            alt="Retrato del artista Rafael Lozano-Hemmer."
           />
-          <figcaption>
-            Rafael Lozano-Hemmer frente a una de sus piezas digitales en espacio de
-            exhibición.
-          </figcaption>
-        </figure>
+        </div>
       </section>
 
       <article>
-        <blockquote>
+        <blockquote class="pull-quote">
           <p>
-            “Me interesa crear plataformas para la participación, donde la obra no
-            existe sin la presencia del público.” — Rafael Lozano-Hemmer
+            <em>
+              «Me interesa crear plataformas para la participación, donde la obra no
+              existe sin la presencia del público.»
+            </em>
           </p>
+          <footer>
+            <cite>Rafael Lozano-Hemmer</cite>
+          </footer>
         </blockquote>
 
         <section aria-labelledby="arte-interactivo">
@@ -148,7 +160,7 @@
         </section>
       </article>
 
-      <aside aria-labelledby="obras-conceptos">
+      <aside class="home-aside" aria-labelledby="obras-conceptos">
         <h2 id="obras-conceptos">Obras y conceptos clave</h2>
         <section aria-labelledby="titulos-obras">
           <h3 id="titulos-obras">Obras</h3>
@@ -170,6 +182,11 @@
       </div>
     </main>
 
-    <div id="site-chrome-bottom"></div>
+    <footer class="site-footer" id="contacto">
+      <address>
+        Contacto:
+        <a href="mailto:rafael@artedigital.com">rafael@artedigital.com</a>
+      </address>
+    </footer>
   </body>
 </html>

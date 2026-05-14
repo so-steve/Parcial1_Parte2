@@ -16,7 +16,6 @@ Sitio web estático en HTML y CSS sobre **Rafael Lozano-Hemmer**: biografía e i
 | `obras.html` | Obras destacadas |
 | `tecnologia.html` | Tecnología e interactividad |
 | `css/styles.css` | Estilos compartidos |
-| `js/site-chrome.js` | Navegación y elementos comunes del sitio |
 | `assets/` | Recursos (imágenes, textos) |
 
 ## Cómo ver el sitio

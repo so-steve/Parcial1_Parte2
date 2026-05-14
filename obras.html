@@ -1,21 +1,32 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>Rafael Lozano-Hemmer — Obras</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/site-chrome.js" defer></script>
   </head>
-  <body data-site-page="obras">
-    <div id="site-chrome-top"></div>
+  <body>
+    <div class="site-top">
+      <header class="site-header">
+        <h1 class="site-header__title">Rafael Lozano-Hemmer</h1>
+        <p>Interactividad, espacio público y arte tecnológico</p>
+      </header>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="obras.html" aria-current="page">Obras</a></li>
+          <li><a href="tecnologia.html">Tecnología e Interactividad</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <div class="container">
@@ -29,18 +40,13 @@
           </header>
 
           <section aria-labelledby="pulse-room">
-            <h2 id="pulse-room">Pulse Room</h2>
-            <figure>
+            <h3 id="pulse-room">Pulse Room</h3>
+            <div class="obras-media">
               <img
-                src="assets/images/pulse-room.jpg"
-                alt="Instalación con muchas lámparas colgantes encendidas."
+                src="assets/images/lozano-hemmer-2.jpg"
+                alt="Pulse Topology (2021), instalación con miles de bombillas suspendidas que reaccionan a los latidos del público, de Rafael Lozano-Hemmer."
               />
-              <figcaption>
-                Imagen sugerida: documentación de la instalación (agregar
-                archivo en
-                <code>assets/images/</code>).
-              </figcaption>
-            </figure>
+            </div>
             <p>
               Instalación basada en pulsos de luz que pueden responder a datos
               del cuerpo o a la presencia del público, generando patrones
@@ -49,17 +55,8 @@
           </section>
 
           <section aria-labelledby="vectorial-elevation">
-            <h2 id="vectorial-elevation">Vectorial Elevation</h2>
-            <figure>
-              <img
-                src="assets/images/vectorial-elevation.jpg"
-                alt="Hazes de luz apuntando al cielo sobre edificios."
-              />
-              <figcaption>
-                Imagen sugerida: intervención lumínica en espacio público
-                (agregar archivo en <code>assets/images/</code>).
-              </figcaption>
-            </figure>
+            <h3 id="vectorial-elevation">Vectorial Elevation</h3>
+
             <p>
               Proyecto de gran escala que transforma el espacio urbano con luz,
               invitando a pensar el espacio público como escenario colectivo.
@@ -67,18 +64,8 @@
           </section>
 
           <section aria-labelledby="body-movies">
-            <h2 id="body-movies">Body Movies</h2>
-            <figure>
-              <img
-                src="assets/images/body-movies.jpg"
-                alt="Sombras de personas proyectadas sobre una fachada con retratos."
-              />
-              <figcaption>
-                Imagen sugerida: proyecciones y sombras en fachada (agregar
-                archivo en
-                <code>assets/images/</code>).
-              </figcaption>
-            </figure>
+            <h3 id="body-movies">Body Movies</h3>
+
             <p>
               Trabajo que utiliza proyección e interacción con sombras,
               convirtiendo a las personas en parte central de la imagen y la
@@ -86,35 +73,51 @@
             </p>
           </section>
 
-          <section aria-labelledby="video">
-            <h2 id="video">Video</h2>
-            <p>
-              El mismo contenido que en
-              <a href="https://www.youtube.com/watch?v=jTzojcaanDs">YouTube</a>.
-            </p>
-            <figure>
+          <section
+            class="obras-pair-section"
+            aria-label="Vicious Circular Breathing, Sphere Packing: Bach y video"
+          >
+            <div class="obras-figure-row">
+              <div class="obras-pair__cell">
+                <img
+                  src="assets/images/lozano-hemmer-3.jpg"
+                  alt="Vicious Circular Breathing (2013), instalación con bolsas de papel y tubos de aire que reciclan la respiración entre visitantes, de Rafael Lozano-Hemmer."
+                />
+              </div>
+              <div class="obras-pair__cell">
+                <img
+                  src="assets/images/lozano-hemmer-4.jpg"
+                  alt="Sphere Packing: Bach (2018), esfera habitable de aluminio y madera con altavoces y luces LED ámbar, de Rafael Lozano-Hemmer."
+                />
+              </div>
+            </div>
+            <div class="obras-pair__video">
               <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/jTzojcaanDs"
+                src="https://www.youtube-nocookie.com/embed/D8TfkklRjd4"
                 title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <figcaption>
-                Ver en YouTube:
-                <a href="https://www.youtube.com/watch?v=jTzojcaanDs"
-                  >youtube.com/watch?v=jTzojcaanDs</a
-                >
-              </figcaption>
-            </figure>
+            </div>
           </section>
         </article>
       </div>
     </main>
 
-    <div id="site-chrome-bottom"></div>
+    <footer class="site-footer" id="contacto">
+      <address>
+        Contacto:
+        <a href="mailto:rafael@artedigital.com">rafael@artedigital.com</a>
+      </address>
+    </footer>
   </body>
 </html>
